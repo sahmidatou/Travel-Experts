@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  .bg-light(style="margin: 80px") 
+        .col
+           input.form-control(type='text', placeholder='First name', aria-label='First name')
+        .col
+           input.form-control(type='text', placeholder='Last name', aria-label='Last name')
+           .row
+        .col
+           input.form-control(type='text', placeholder='Address', aria-label='Address')
+        .col
+           input.form-control(type='text', placeholder='City', aria-label='City')
+        .col
+           input.form-control(type='text', placeholder='Provence', aria-label='Provence')
+        .col
+           input.form-control(type='text', placeholder='Postal Code', aria-label='Postal Code')
+        .mb-3
+           label.form-label(for='exampleFormControlInput1') Email address
+           input.form-control#exampleFormControlInput1(type='email', placeholder='name@example.com') 
+        .mb-3
+           label.form-label(for='exampleFormControlInput1') Re-Email address
+           input.form-control#exampleFormControlInput1(type='email', placeholder='name@example.com')
+        .mb-3
+           label.form-label(for='exampleInputPassword1') Password
+           input.form-control#exampleInputPassword1(type='password')
+        .mb-3
+           label.form-label(for='exampleInputPassword1')  Re-Password
+           input.form-control#exampleInputPassword1(type='password')
+        .mb-3   
+           button.btn.btn-primary(type='submit') Submit

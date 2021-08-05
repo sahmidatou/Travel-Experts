@@ -1,0 +1,41 @@
+extends layout
+
+block content
+
+  form.row.g-3(style="margin: 80px")
+     .col-md-6
+       label.form-label(for='inputEmail4') Email
+       input.form-control#inputEmail4(type='email')
+     .col-md-6
+       label.form-label(for='inputPassword4') Password
+       input.form-control#inputPassword4(type='password')
+     .col-12
+       label.form-label(for='inputAddress') Address
+       input.form-control#inputAddress(type='text', placeholder='1234 Main St')
+    
+     .col-md-6
+       label.form-label(for='inputCity') City
+       input.form-control#inputCity(type='text')
+     .col-md-4
+       label.form-label(for='inputState') State
+       select#inputState.form-select
+       option(selected) Choose...
+       option ...
+     .col-md-2
+      label.form-label(for='inputZip') Zip
+      input.form-control#inputZip(type='text')
+     .col-12
+     .form-check
+       input.form-check-input#gridCheck(type='checkbox')
+       label.form-check-label(for='gridCheck').
+        
+        Check me out
+        
+     .col-12
+       button.btn.btn-primary(type='submit') Sign in
+   
+     a.float-end.bg-light(href="/users/register") 
+         h5 Register
+  
+  
+
